@@ -77,10 +77,9 @@ Hat man Hinweise von mehreren Proteinen, kann die Gesamtwahrscheinlichkeit sich 
 
 Die Zuordnung bekannter Mutationsmuster in den vorgegebenen Referenzsequenzen zu ihren GS-Scores sind für jede Referenzsequenz in den entsprechenden csv-Dateien hinterlegt, so beispielsweise für GREB1 in [data/GREB1_patterns.csv](data/GREB1_patterns.csv)) hinterlegt. Dabei beschreibt jede Zeile ein Mutationsmuster. In der ersten Spalte ist das Mutationsmuster selber genannt. In den darauffolgenden Spalten sind die GS-Scores für unterschiedliche Spezies genannt - welche, lässt sich aus dem Header entnehmen. In der ersten Zeile der Beispieldatei ist also die Mutation ein Austausch der Referenzaminosäure zu C an Position 1164 des Gens GREB1 beschrieben, und diese hat einen GS-Score 180 für eine Zuordnung zum Neanderthaler, von 8 für eine Zuordnung zum Schimpansen und von 70 für eine Zuordnung zum Menschen:
 
-|Mutation Pattern|Neanderthal|Chimp|Human|
-|---|---|---|---|---|
-|1164C|180|8|70|
-
+| Mutation Pattern | Neanderthal | Chimp | Human |
+| --- | --- | --- | --- | 
+| 1164C | 180 | 8 | 70 |
 
 ### Simulierte Fundstätten-Daten
 
