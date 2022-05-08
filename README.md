@@ -17,7 +17,7 @@ Entsprechend ist es möglich, Unterschiede zwischen den Genomen auch recht eng m
 
 Auf Basis dieser Informationen ist es möglich, durch die Untersuchung von Proteinresten in paläontologischen Funden und den Vergleich der ermittelten Proteinsequenzen mit Listen bekannter Sequenzen zu ermitteln, welcher Spezies die Funde zuzuordnen sind.
 
-In dieser und den folgenden Aufgaben werden Sie eine Software schreiben, welche auf Basis von Proteinsequenzen einer Fundstätte die Wahrscheinlichkeit bestimmt, dass diese Homo Sapiens, Neanderthalern oder Schimpansen (stellen Sie sich vor, es soll die Hypothese untersucht werden, ob auch Schimpansen an einigen Orten primitive Zivilisationen entwickelt haben) zugeordnet werden kann.
+In dieser und den folgenden Aufgaben werden Sie eine Software schreiben, welche auf Basis von Proteinsequenzen einer Fundstätte die Wahrscheinlichkeit bestimmt, dass diese Homo Sapiens, Neanderthalern oder Schimpansen (Wenn das Proteom näher am Schimpansen ist, handelt es sich vermutlich um eine noch  Vor- oder Frühmenschenart) zugeordnet werden kann.
 
 ## Ausgangsdaten
 
