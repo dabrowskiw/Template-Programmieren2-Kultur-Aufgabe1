@@ -55,7 +55,7 @@ public class SeqFile {
         return null;
     }
 
-    **
+    /**
      *
      * @return true if the FASTA file was read successfully, false otherwise.
      */
