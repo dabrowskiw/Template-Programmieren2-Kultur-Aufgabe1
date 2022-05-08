@@ -31,18 +31,34 @@ public class SeqFile {
         return -1;
     }
 
+    /**
+     *
+     * @return The number of sequences read from the FASTA file, or 0 if isValid() is false.
+     */
     public int getNumberOfSequences() {
         return -1;
     }
 
+    /**
+     *
+     * @return The sequences read from the FASTA file, or an empty HashSet if isValid() is false.
+     */
     public HashSet<String> getSequences() {
         return null;
     }
 
+    /**
+     *
+     * @return The first sequence read from the FASTA file, or an empty String if isValid() is false.
+     */
     public String getFirstSequence() {
         return null;
     }
 
+    **
+     *
+     * @return true if the FASTA file was read successfully, false otherwise.
+     */
     public boolean isValid() {
         return false;
     }
