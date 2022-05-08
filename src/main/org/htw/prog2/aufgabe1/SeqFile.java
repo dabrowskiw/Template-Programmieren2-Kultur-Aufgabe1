@@ -3,6 +3,12 @@ package org.htw.prog2.aufgabe1;
 import java.util.HashSet;
 
 public class SeqFile {
+    
+    /**
+     * Reads the specified FASTA file and stores sequences. In case the file does not exist or is not a valid FASTA
+     * file, the Constructor does not throw an Exception. Instead, isValid() on the resulting object will return false.
+     * @param filename
+     */
     public SeqFile(String filename) {
     }
 
