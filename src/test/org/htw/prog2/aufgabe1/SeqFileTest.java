@@ -38,8 +38,8 @@ class SeqFileTest {
 
     @Test
     void getNumberOfSequences_multiple() {
-        SeqFile seqfile = new SeqFile("data/protease_sequences.fasta");
-        assertEquals(1000, seqfile.getNumberOfSequences());
+        SeqFile seqfile = new SeqFile("data/site_sequences.fasta");
+        assertEquals(382, seqfile.getNumberOfSequences());
     }
 
     @Test

@@ -9,7 +9,7 @@ Damit verständlich ist, was eigentlich mit diesem Projekt bezweckt wird, beginn
 
 Die Publikation, welche diese Aufgabe inspiriert hat, finden Sie [hier](https://www.mpg.de/10731379/palaeoproteomik-neandertaler).
 
-Menschen und Neanderthaler teilten sich über längere Zeit hinweg den selben Lebensraum. Für Paläontologen macht die dies eine Zuordnung von Funden (wie beispielsweise Höhlenmalereien) zu Menschen, Neanderthalern oder anderen Humanoiden herausfordernd.
+Homo Sapiens und Neanderthaler teilten sich über längere Zeit hinweg den selben Lebensraum. Für Paläontologen macht die dies eine Zuordnung von Funden (wie beispielsweise Höhlenmalereien) zu Homo Sapiens, Neanderthalern oder anderen Humanoiden herausfordernd.
 
 Eine Herangehensweise an dieses Problem ist die Paläoproteomik. Durch Mutationen veärndern sich die Proteine, welche vom Körper hergestellt werden. Ist eine solche Mutation vorteilhaft, so kann sie über die Generationen hinweg zum "Standard" in einer Population werden (der Organismus, in dem dies Mutation aufgetreten ist, erzeugt mehr Nachwuchs, der auch diese Mutation hat und sich entsprechend auch stärker vermehrt - so dass nach vielen Generationen alle Organismen Nachfahren dieses ersten Organismus mit der Mutation sind und somit auch die Mutation tragen). Eine Anhäufung von solchen Mutationen in unterschiedlichen Populationen (in der Regel im Zusammenhang mit einer räumlichen Trennung dieser Populationen, so dass sich die Genome nicht vermischen können) kann über die Zeit hinweg dazu führen, dass die Organismen der beiden Populationen sich so stark voneinander unterscheiden, dass sie keinen gemeinsamen Nachwuchs mehr erzeugen können. Dies wird als Spezies-Bildung bezeichnet und ist der Grund für die biologische Vielfalt auf der Erde.
 
@@ -17,7 +17,7 @@ Entsprechend ist es möglich, Unterschiede zwischen den Genomen auch recht eng m
 
 Auf Basis dieser Informationen ist es möglich, durch die Untersuchung von Proteinresten in paläontologischen Funden und den Vergleich der ermittelten Proteinsequenzen mit Listen bekannter Sequenzen zu ermitteln, welcher Spezies die Funde zuzuordnen sind.
 
-In dieser und den folgenden Aufgaben werden Sie eine Software schreiben, welche auf Basis von Proteinsequenzen einer Fundstätte die Wahrscheinlichkeit bestimmt, dass diese Menschen, Neanderthalern oder Schimpansen (stellen Sie sich vor, es soll die Hypothese untersucht werden, ob auch Schimpansen an einigen Orten primitive Zivilisationen entwickelt haben) zugeordnet werden kann.
+In dieser und den folgenden Aufgaben werden Sie eine Software schreiben, welche auf Basis von Proteinsequenzen einer Fundstätte die Wahrscheinlichkeit bestimmt, dass diese Homo Sapiens, Neanderthalern oder Schimpansen (Wenn das Proteom näher am Schimpansen ist, handelt es sich vermutlich um eine noch  Vor- oder Frühmenschenart) zugeordnet werden kann.
 
 ## Ausgangsdaten
 
@@ -75,7 +75,7 @@ Hat man Hinweise von mehreren Proteinen, kann die Gesamtwahrscheinlichkeit sich 
 
 <img src="https://render.githubusercontent.com/render/math?math=P_{err}=10^{-\frac{180}{10}}*10^{-\frac{100}{10}}=10^{-1.8}*10^{-1}=0.001585">
 
-Die Zuordnung bekannter Mutationsmuster in den vorgegebenen Referenzsequenzen zu ihren GS-Scores sind für jede Referenzsequenz in den entsprechenden csv-Dateien hinterlegt, so beispielsweise für GREB1 in [data/GREB1_patterns.csv](data/GREB1_patterns.csv)) hinterlegt. Dabei beschreibt jede Zeile ein Mutationsmuster. In der ersten Spalte ist das Mutationsmuster selber genannt. In den darauffolgenden Spalten sind die GS-Scores für unterschiedliche Spezies genannt - welche, lässt sich aus dem Header entnehmen. In der ersten Zeile der Beispieldatei ist also die Mutation ein Austausch der Referenzaminosäure zu C an Position 1164 des Gens GREB1 beschrieben, und diese hat einen GS-Score 180 für eine Zuordnung zum Neanderthaler, von 8 für eine Zuordnung zum Schimpansen und von 70 für eine Zuordnung zum Menschen:
+Die Zuordnung bekannter Mutationsmuster in den vorgegebenen Referenzsequenzen zu ihren GS-Scores sind für jede Referenzsequenz in den entsprechenden csv-Dateien hinterlegt, so beispielsweise für GREB1 in [data/GREB1_patterns.csv](data/GREB1_patterns.csv)) hinterlegt. Dabei beschreibt jede Zeile ein Mutationsmuster. In der ersten Spalte ist das Mutationsmuster selber genannt. In den darauffolgenden Spalten sind die GS-Scores für unterschiedliche Spezies genannt - welche, lässt sich aus dem Header entnehmen. In der ersten Zeile der Beispieldatei ist also die Mutation ein Austausch der Referenzaminosäure zu C an Position 1164 des Gens GREB1 beschrieben, und diese hat einen GS-Score 180 für eine Zuordnung zum Neanderthaler, von 8 für eine Zuordnung zum Schimpansen und von 70 für eine Zuordnung zum Homo Sapiens:
 
 | Mutation Pattern | Neanderthal | Chimp | Human |
 | --- | --- | --- | --- | 
@@ -107,4 +107,4 @@ Implementieren Sie die Methode ```public static CommandLine parseOptions(String[
 * -r, --references: Pfad zu FASTA-Datei mit der Referenzsequenz. Muss angegeben werden.
 * -p, --proteinseqs: Pfad zu FASTA-Datei mit Patientensequenzen. Muss angegeben werden.
 
-Die Methode soll ```null``` zurückgeben, falls eine der erforderlichen Optionen nicht übergeben wurde.
+Die Methode soll mittels eines HelpFormatters eine Fehlermeldung aus- und ```null``` zurückgeben, falls eine der erforderlichen Optionen nicht übergeben wurde.
